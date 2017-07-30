@@ -14,7 +14,7 @@ public class SampleApplication extends WebSecurityConfigurerAdapter{
     http
       .antMatcher("/**")
       .authorizeRequests()
-        .antMatchers("/", "/login**", "/webjars/**")
+        .antMatchers("/", "/login**", "/webjars/**","/students**")
         .permitAll()
       .anyRequest()
         .authenticated();
